@@ -32,11 +32,11 @@ main{
 }
 
 /* Hide default HTML checkbox */
-/* .switch input {
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
-} */
+}
 
 .slider {
   position: absolute;
@@ -167,3 +167,11 @@ button{
   font-size: 3em;
 }
 
+
+@media only screen and (min-width: 768px) {
+
+  .pricing-divs{
+    flex-direction: row;
+  }
+
+}
