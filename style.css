@@ -1,7 +1,11 @@
+
+
+
+
 main{
   font-family: 'Montserrat', sans-serif;
   background-color: hsl(240, 78%, 98%);
-  
+ 
 }
 
 .heading{
@@ -22,6 +26,7 @@ main{
 .toggle >* {
   width: 33%;
   color: hsl(234, 14%, 74%);
+
 }
 
 
@@ -30,6 +35,8 @@ main{
   display: inline-block;
   width: 60px;
   height: 34px;
+  cursor: pointer;
+  
 }
 
 /* Hide default HTML checkbox */
@@ -37,6 +44,7 @@ main{
   opacity: 0;
   width: 0;
   height: 0;
+  
 }
 
 .slider {
@@ -141,6 +149,7 @@ button{
   padding: .8em;
   margin-bottom: 1.5em;
   margin-top: 1em;
+  cursor: pointer;
 
 }
 .basic-btn, .master-btn{
