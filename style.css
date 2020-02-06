@@ -16,6 +16,7 @@ main{
   font-size: 10px;
   align-items: center;
   width: 100%;
+  justify-content: center;
 }
 
 .toggle >* {
@@ -163,15 +164,59 @@ button{
   border-radius: 10px;
 }
 
-.professional h1{
-  font-size: 3em;
-}
+
 
 
 @media only screen and (min-width: 768px) {
 
+  h3{
+    font-size: 2em;
+  }
+  .toggle{
+    width: 50%;
+    margin: 0 auto;
+    /* justify-content: center; */
+  }
+
+  .annual{
+    margin-right: 20px;
+    text-align: right;
+    width: 100px;
+    font-size: 1.5em;
+  }
+
+  .monthly{
+    text-align: left;
+    margin-left: 20px;
+    width: 100px;
+    font-size: 1.5em;
+    
+  }
+
   .pricing-divs{
     flex-direction: row;
+    width: 60%;
   }
+
+  .pro{
+    padding-bottom: 2.2em;
+  } 
+
+  .pro h1{
+    font-size: 4em;
+  }
+
+  .basic h1, .master h1{
+    font-size: 4em;
+  }
+
+  .basic-btn, .master-btn{
+    font-size: .8em;
+  }
+  
+  .pro-btn{
+    margin-top: 3.2em;
+    font-size: .8em;
+  }  
 
 }
