@@ -10,8 +10,79 @@ main{
   color: hsl(233, 13%, 49%)
 }
 
-label.switch{
-  
+.toggle{
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.toggle >* {
+  width: 33%;
+  color: hsl(234, 14%, 74%);
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+/* .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+} */
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(237, 63%, 64%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color:  hsl(237, 63%, 64%);
+}
+
+input:focus + .slider {
+  outline: none;
+  /* box-shadow: 0 0 1px #2196F3; */
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .pricing-divs{
@@ -35,24 +106,32 @@ label.switch{
 
 
 .basic h1, .master h1{
-  font-size: 3em;
+  font-size: 2.6em;
+}
+
+.pro h1{
+  font-size: 2.6em;
 }
 
 .basic-div, .master-div{
   width: 80%;
   margin: 0 auto;
   padding: 1em;
-  border: gray 1px;
-  border-style: solid hidden solid hidden;
+  border:hsl(234, 14%, 74%) 1px;
+  border-style: solid hidden hidden hidden;
 }
 
 .pro-div{
   width: 80%;
   margin: 0 auto;
   padding: 1em;
-  border: white 1px;
-  border-style: solid hidden solid hidden;
+  border: hsl(234, 14%, 74%) 1px;
+  border-style: solid hidden hidden hidden;
 }
+.last-div{
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+
 button{
   width: 80%;
   font-size: 12px;
@@ -66,15 +145,13 @@ button{
 .basic-btn, .master-btn{
   background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   color: white;
+  font-weight: 700;
 }
 
 .pro-btn{
   background: white;
-  color: hsl(233, 13%, 49%);
-  
-  
-  
-  
+  color: hsl(237, 63%, 64%);
+  font-weight: 700;
 } 
 
 .pro{
