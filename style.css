@@ -10,12 +10,11 @@ main{
   font-family: 'Montserrat', sans-serif;
   background-color: hsl(240, 78%, 98%);
   
-  /* background: url("images/bg-top.svg");
-  background-position: top right;  */
+  
 
-  background-image: url("images/bg-bottom.svg"), url("images/bg-top.svg");
+  /* background-image: url("images/bg-bottom.svg"), url("images/bg-top.svg");
   background-position: left bottom, right top;
-  background-repeat: no-repeat, no-repeat;
+  background-repeat: no-repeat, no-repeat; */
   
 }
 
@@ -190,12 +189,14 @@ button{
 @media only screen and (min-width: 768px) {
 
   body{
-    max-width: 90%;
+    max-width: 60%;
     margin: 0 auto;
   }
  
   main{
-   
+    background-image: url("images/bg-bottom.svg"), url("images/bg-top.svg");
+    background-position: left bottom, right top;
+    background-repeat: no-repeat, no-repeat;
     margin: 0 auto;
   }
 
@@ -225,23 +226,31 @@ button{
 
   .pricing-divs{
     flex-direction: row;
-    width: 60%;
+    width: 70%;
   }
+
+  .pricing-divs div{
+    font-size: .5em;
+    padding: 1.5em;
+  }
+
+
 
   .pro{
     /* padding-bottom: 2.2em; */
   } 
 
   .pro p{
-    margin-top: 2em;
+    margin-top: 1.6em;
   }
+
   .pro h1{
-    font-size: 4em;
+    font-size: 2.5em;
   }
 
 
   .basic h1, .master h1{
-    font-size: 4em;
+    font-size: 2.5em;
   }
 
   .basic-btn, .master-btn{
@@ -251,7 +260,7 @@ button{
   .pro-btn{
     /* margin-top: 3.2em; */
     font-size: .8em;
-    margin-bottom: 3em;
+    margin-bottom: 2.6em;
   }  
 
   .attribution{
