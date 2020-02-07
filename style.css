@@ -1,11 +1,22 @@
 
 
-
+body{
+  /* background: url("images/bg-bottom.svg")  no-repeat;
+  background-position: bottom left; */
+  
+}
 
 main{
   font-family: 'Montserrat', sans-serif;
   background-color: hsl(240, 78%, 98%);
- 
+  
+  /* background: url("images/bg-top.svg");
+  background-position: top right;  */
+
+  background-image: url("images/bg-bottom.svg"), url("images/bg-top.svg");
+  background-position: left bottom, right top;
+  background-repeat: no-repeat, no-repeat;
+  
 }
 
 .heading{
